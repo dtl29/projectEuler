@@ -15,22 +15,26 @@ int main()
 {
 	int test = 1;
 	int multiplier = 2;
+
+	//cycle through smallest integer until one is found which will be the awnser 
 	while (!PermutedMultiples(test, multiplier))
 	{
 		test++;
 	}
+	//output result 
 	std::cout << "the smallest permuted multiple integer is: " << test << '\n';
 }
 /*
 function permutedMultiples
-
+Precondition: this function takes two integers as an argument, they both must be positive integers. the first is the number to be tested and the second is the multiplier to test againest,
+	the multiple must be less than 6 
+Postcondition: will return true if the input number was a permuted multiple of 2,3,4,5,and 6 
 */
 bool PermutedMultiples(int test, int multiplier)
 {
 	int multiplierTemp = test * multiplier;
 	std::string first = std::to_string(test);
 	std::string second = std::to_string(multiplierTemp);
-	std::cout << first << "and " << second << '\n';
 	bool wasFound = false;
 
 	//steps through first word and matches the number to another number in the second word
