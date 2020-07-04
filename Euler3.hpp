@@ -10,19 +10,16 @@ Euler problem 3:
 *What is the largest prime factor of the number 600851475143 ?
 */
 
-bool isPrime(double num)
+bool isPrime3(double num)
 {
-	if(num < 2)
+	std::cout << std::fixed << "\nchecking if " << num << " is prime.\n";
+	if( num <= 3 && num >= 2)
 	{
-		return false;
+		return true;
 	}
-	if(fmod(num, 2) ==0 || fmod(num , 5) ==0 || fmod(num , 3) ==0 || fmod(num , 7) ==0 || fmod(num , 9) ==0)
+	for(double i = 2; i <= num / 2; i++)
 	{
-		return false;
-	}
-	for(double i = 2; i <= num / 2; ++i)
-	{
-		if(fmod(num , i) == 0)
+		if(fmod(num,i)==0)
 		{
 			return false;
 		}
@@ -30,23 +27,20 @@ bool isPrime(double num)
 	return true;
 }
 
-int Euler3()
+double Euler3()
 {
-	
-	double og = 600851475143;
-	int n = 2147483646;
-	for(double i = round(og / 2000); i > 3; i--)
+	double num = 600851475143;
+	for(double i = round(num / 2.0); i > 0.0; i--)
 	{
-		std::cout << i << "next, ";
-		if(isPrime(i))
+		if(fmod(num, i) == 0)
 		{
-			if(fmod(og, i == 0))
+			if(isPrime3(i))
 			{
+				std::cout << "this is the awnser: ";
 				return i;
 			}
 		}
 	}
 	return -1;
-	
 }
 
