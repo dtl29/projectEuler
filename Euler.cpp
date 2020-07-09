@@ -31,5 +31,5 @@ int main()
 	//std::cout << std::fixed << "#10: The sum of primes under 2 mill is " << Euler10() << std::endl;//answer: 142913828922
 	std::cout << std::fixed << "#11: The largest product of four numbers in a row is " << Euler11() << std::endl;//answer: 70600674 //gp back to this one
 	//std::cout << "#12: The first triangle number with 500 divisors is " << Euler12() << std::endl;//answer: 76576500
-	std::cout << "#13: The " << Euler13() << std::endl;
+	//std::cout << "#13: The " << Euler13() << std::endl;//answer: 5537376230
 }
