@@ -12,6 +12,9 @@
 #include "Euler11.hpp"
 #include "Euler12.hpp"
 #include "Euler13.hpp"
+#include "Euler14.hpp"
+#include "Euler15.hpp"
+#include "Euler16.hpp"
 
 /*
 Main function to test problems
@@ -29,7 +32,10 @@ int main()
 	//std::cout << std::fixed<< "#8: The largest product is " << Euler8() << std::endl;//answer: 23514624000
 	//std::cout << "#9: The product of a*b*c is " << Euler9() << std::endl;//answer: 31875000
 	//std::cout << std::fixed << "#10: The sum of primes under 2 mill is " << Euler10() << std::endl;//answer: 142913828922
-	std::cout << std::fixed << "#11: The largest product of four numbers in a row is " << Euler11() << std::endl;//answer: 70600674 //gp back to this one
+	//NOT DONE //std::cout << std::fixed << "#11: The largest product of four numbers in a row is " << Euler11() << std::endl;//answer: 70600674 //gp back to this one
 	//std::cout << "#12: The first triangle number with 500 divisors is " << Euler12() << std::endl;//answer: 76576500
-	//std::cout << "#13: The " << Euler13() << std::endl;//answer: 5537376230
+	//std::cout << "#13: The first 10 digits are " << Euler13() << std::endl;//answer: 5537376230
+	//std::cout << std::fixed << "#14: The longest starting number is " << Euler14(1000000) << std::endl;//Answer: 837799
+	//NOT DONE //std::cout << "#15: The amount of paths down for 20 X 20 gird is " << Euler15() << std::endl;
+	//NOT DONE//std::cout << "#16: The sum of the disgits of 2^1000 is " << Euler16() << std::endl; //Answer: 1366
 }
